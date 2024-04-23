@@ -1,5 +1,5 @@
 import React from "react";
-import login from "../../assets/login.jpg";
+import login from "../../assets/login5.jpg";
 
 const LoginPage = () => {
   return (
@@ -27,7 +27,7 @@ const LoginPage = () => {
             </p>
           </div>
 
-          <div className="w-full flex flex-col gap-y-10" >
+          <div className="w-full flex flex-col gap-y-10">
             <input
               type="email"
               placeholder="Email"
@@ -59,17 +59,17 @@ const LoginPage = () => {
           </div>
 
           <div className=" flex flex-col gap-y-4 my-4 items-center ">
-          <p className="text-sm font-normal text-[#060606]">
-            Don't have an account?{" "}
+            <p className="text-sm font-normal text-[#060606]">
+              Don't have an account?{" "}
+              <span className="font-semibold underline underline-offset-2 cursor-pointer">
+                Sign Up for free
+              </span>
+            </p>
+            <p>or</p>
             <span className="font-semibold underline underline-offset-2 cursor-pointer">
-              Sign Up for free
+              Register as A Dealer
             </span>
-          </p>
-          <p>or</p>
-          <span className="font-semibold underline underline-offset-2 cursor-pointer">
-            Register as A Dealer
-          </span>
-        </div>
+          </div>
         </div>
       </div>
     </div>

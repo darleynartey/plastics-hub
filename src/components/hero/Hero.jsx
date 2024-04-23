@@ -13,7 +13,7 @@ import "swiper/css/pagination";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen flex flex-col items-center relative">
+    <div name='home' className="w-full h-screen flex flex-col items-center relative">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}

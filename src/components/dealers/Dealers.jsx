@@ -63,8 +63,8 @@ const Dealers = () => {
         {data.map((d) => (
           <div className='bg-white h-[450px] text-black rounded-xl'>
            <div className='flex flex-col justify-center items-center gap-4 pt-4'>
-            <img src={d.img.src} alt="" className='h-60 w-60 rounded-full'/>
-             <p className='tex-xl font-semibold'>{d.name}</p>
+            <img src={d.img.src} alt="" className='h-60 w-60 object-cover rounded-full'/>
+             <p className='text-xl font-semibold'>{d.name}</p>
              <p>{d.review}</p>
              <button className='text-black text-lg px-6 py-1'>Contact</button>
             </div>

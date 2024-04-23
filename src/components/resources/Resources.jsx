@@ -10,7 +10,7 @@ import plastic from "../../assets/recycling.jpg";
 
 const Resources = () => {
   return (
-    <div>
+    <div name="resources">
 
       <div className="text-center">
         <h2 className="text-5xl font-bold pt-10 mb-20 text-teal-600">

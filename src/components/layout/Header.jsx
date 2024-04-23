@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
 import { Link, animateScroll as scroll, } from 'react-scroll'
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+  const navigate = useNavigate()
   const [head, setHead] = useState(false)
     const handleClick = () => setHead(!head)
 
@@ -23,7 +25,8 @@ const Header = () => {
         <button className='border-none bg-transparent text-black mr-4'>
           Sign In
         </button>
-        <button className='px-8 py-3 text-black'>Sign Up</button>
+        <button className='px-8 py-3 text-black' onClick={() => navigate("/signup")}>Sign Up
+        </button>
       </div>
       <div className='md:hidden mr-4' onClick={handleClick}>
           {!head ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}

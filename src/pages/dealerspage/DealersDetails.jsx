@@ -1,9 +1,9 @@
 import React from 'react'
-import image1 from '../../assets/image1.jpg';
+import image1 from '../../assets/deal1.jpg';
 
-const DealersPage = () => {
+const DealersDetails = () => {
   return (
-      <div className="bg-neutral-500">
+      <div className="bg-teal-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-12">
                     
@@ -16,7 +16,7 @@ const DealersPage = () => {
                                 <div className="text-sm text-zinc-800">John Doe</div>
                             </div>
                             <p className="text-zinc-600 text-sm">"Great service, very satisfied with the quick response!"</p>
-                            <div className="text-yellow-400 mt-2">
+                            <div className="text-teal-600 mt-2">
                                 ★★★★★
                             </div>
                             <button className="bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-gray-700 transition duration-300">Contact Us</button>
@@ -25,7 +25,7 @@ const DealersPage = () => {
                     </div>
         
                     
-                    <div className="bg-teal-600 p-8 rounded-lg shadow-lg">
+                    <div className="bg-neutral-300 p-8 rounded-lg shadow-lg">
                         <form>
                             <div className="mb-4">
                                 <input type="text" placeholder="Name" className="w-full p-3 rounded-lg focus:outline-none"/>
@@ -50,4 +50,4 @@ const DealersPage = () => {
   )
 }
 
-export default DealersPage
+export default DealersDetails
