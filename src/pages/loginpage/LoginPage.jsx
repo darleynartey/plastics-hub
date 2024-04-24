@@ -1,7 +1,9 @@
 import React from "react";
-import login from "../../assets/login5.jpg";
+import picture3 from '../../assets/picture3.jpg';
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate()
   return (
     <div className="w-full h-screen flex items-start">
       <div className="relative w-1/2 h-full flex flex-col">
@@ -13,11 +15,11 @@ const LoginPage = () => {
             Start for free and get exciting offers
           </p>
         </div>
-        <img src={login} alt="" className="w-full h-full object-cover" />
+        <img src={picture3} alt="" className="w-full h-full object-cover" />
       </div>
 
       <div className="w-1/2 h-full bg-[#f5f5f5] flex flex-col p-20 gap-y-10">
-        <h1 className="text-xl text-[#060606] font-semibold">Brand</h1>
+        <h1 className="text-4xl text-teal-600 font-extrabold ">Plastics Hub</h1>
 
         <div className="w-full flex flex-col max-w-[500px]">
           <div className="w-full flex flex-col mb-10">
@@ -61,12 +63,12 @@ const LoginPage = () => {
           <div className=" flex flex-col gap-y-4 my-4 items-center ">
             <p className="text-sm font-normal text-[#060606]">
               Don't have an account?{" "}
-              <span className="font-semibold underline underline-offset-2 cursor-pointer">
+              <span className="font-semibold underline underline-offset-2 cursor-pointer" onClick={() => navigate("/signup")}>
                 Sign Up for free
               </span>
             </p>
             <p>or</p>
-            <span className="font-semibold underline underline-offset-2 cursor-pointer">
+            <span className="font-semibold underline underline-offset-2 cursor-pointer" onClick={() => navigate("/register")}>
               Register as A Dealer
             </span>
           </div>

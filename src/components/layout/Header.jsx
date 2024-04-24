@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 import {MenuIcon, XIcon} from '@heroicons/react/outline'
 import { useNavigate } from 'react-router-dom'
 
@@ -19,10 +19,11 @@ const Header = () => {
         <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
         <li><Link to="resources" smooth={true} offset={-50} duration={500}>Resources</Link></li>
         <li><Link to="support" smooth={true} offset={-50} duration={500}>Support</Link></li>
+        <li><Link to="support" smooth={true} offset={-50} duration={500} onClick={() => navigate("/dealercard")}>Dealers</Link></li>
         </ul>
       </div>
       <div className='hidden md:flex pr-4'>
-        <button className='border-none bg-transparent text-black mr-4'>
+        <button className='border-none bg-transparent text-black mr-4' onClick={() => navigate("/login")}>
           Sign In
         </button>
         <button className='px-8 py-3 text-black' onClick={() => navigate("/signup")}>Sign Up

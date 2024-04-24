@@ -18,7 +18,7 @@ const Dealers = () => {
       },
       review: '4.5'
     },
-    {
+    { 
       name: 'Tracey Oppong',
       img: {
         id: 1,

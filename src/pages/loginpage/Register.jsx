@@ -1,5 +1,5 @@
 import React from "react";
-import login from "../../assets/login5.jpg";
+import picture3 from '../../assets/picture3.jpg';
 
 const Register = () => {
   return (
@@ -13,7 +13,7 @@ const Register = () => {
             Start for free and get exciting offers
           </p>
         </div>
-        <img src={login} alt="" className="w-full h-full object-cover" />
+        <img src={picture3} alt="" className="w-full h-full object-cover" />
       </div>
 
       <div className="w-full flex flex-col max-w-[500px] mt-5">
@@ -55,9 +55,9 @@ const Register = () => {
             className="w-full my-2 py-2 bg-transparent text-black border-b border-black outline-none focus:outline-none"
           />
 
-          <span className="font-semibold underline underline-offset-2 cursor-pointer">
-            Register as A Dealer
-          </span>
+          <button className="font-semibold underline-offset-2 cursor-pointer w-36 h-10">
+            Submit
+          </button>
         </div>
       </div>
     </div>
