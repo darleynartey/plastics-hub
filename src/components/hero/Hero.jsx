@@ -9,9 +9,11 @@ import picture from "../../assets/picture2.jpg";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { useNavigate } from "react-router-dom";
 
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <div name='home' className="w-full h-screen flex flex-col items-center relative">
       <Swiper
@@ -61,7 +63,7 @@ const Hero = () => {
             Turn scraps into cash with ease <br />
             at Plastics Hub
           </p>
-          <button className="py-3 px-6 my-4 w-1/2">Get Started</button>
+          <button className="py-3 px-6 my-4 w-1/2" onClick={() => navigate("/login")}>Get Started</button>
         </div>
       </div>
     </div>

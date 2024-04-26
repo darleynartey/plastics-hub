@@ -1,7 +1,9 @@
 import React from "react";
 import picture3 from "../../assets/picture3.jpg";
+import {useNavigate} from 'react-router-dom';
 
 const SignUp = () => {
+  const navigate = useNavigate()
   
   return (
     <div className="w-full h-screen flex items-start gap-20">
@@ -46,8 +48,8 @@ const SignUp = () => {
             className="w-full my-2 py-2 bg-transparent text-black border-b border-black outline-none focus:outline-none"
           />
 
-          <button className="font-semibold underline-offset-2 cursor-pointer w-36 h-10">
-            Submit
+          <button className="font-semibold text-black underline-offset-2 cursor-pointer w-36 h-10" onClick={() => navigate("/dealercard")}>
+            Submit 
           </button>
         </div>
       </div>

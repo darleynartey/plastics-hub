@@ -9,7 +9,7 @@ import Register from "./pages/loginpage/Register";
 const router = createBrowserRouter ([
  {path: "/", element: <LandingPage/>},
  {path: "/login", element: <LoginPage/>},
- {path: "/dealersdetails", element: <DealersDetails/>},
+ {path: "/dealerdetails", element: <DealersDetails/>},
  {path: "/dealercard", element: <DealerCard/>},
  {path: "/signup", element: <SignUp/>},
  {path: "/register", element: <Register/>},

@@ -19,7 +19,6 @@ const Header = () => {
         <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
         <li><Link to="resources" smooth={true} offset={-50} duration={500}>Resources</Link></li>
         <li><Link to="support" smooth={true} offset={-50} duration={500}>Support</Link></li>
-        <li><Link to="support" smooth={true} offset={-50} duration={500} onClick={() => navigate("/dealercard")}>Dealers</Link></li>
         </ul>
       </div>
       <div className='hidden md:flex pr-4'>

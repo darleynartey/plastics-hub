@@ -11,10 +11,12 @@ import d10 from "../../assets/d10.jpg";
 import d11 from "../../assets/d11.jpg";
 import d12 from "../../assets/d12.jpg";
 import d13 from "../../assets/d13.jpg";
-import avatar from "../../assets/avatar.jpg";
+import avatar from "../../assets/welcome.jpg";
 import Footer from "../../components/layout/Footer";
+import { useNavigate } from "react-router-dom";
 
 const DealerCard = () => {
+  const navigate = useNavigate()
   return (
     <div className="bg-[#EEEEE9]">
       <div className="p-10">
@@ -22,17 +24,19 @@ const DealerCard = () => {
           <h1 className="text-6xl font-extrabold mr-4 sm:text-3xl text-teal-900 ">
             PLASTICS HUB
           </h1>
+          <div>
           <input
             type="text"
             className="border border-teal-300 p-2 w-96 rounded-l-lg items-center focus:outline-none"
-            placeholder="Search..."
+            placeholder="Search..." 
           />
-          {/* <button
-            className="inline-block text-black p-2  rounded-r-lg w-24"
+          <button
+            className=" text-black p-2  rounded-r-lg w-24"
             id="searchButton"
           >
             Search
-          </button> */}
+          </button>
+          </div>
          <div className="flex flex-col">
           <img
             className="inline-block h-20 w-20 mt-0 mr-8 ml-8 mb-auto rounded-full ring-2 ring-white object-cover"
@@ -56,10 +60,11 @@ const DealerCard = () => {
               className="rounded-lg shadow-xl h-80 w-80 object-cover"
             />
 
-            <div className="p-4">
+            <div className="p-4 items-center">
               <h3 className="text-lg font-semibold">Eric Asare</h3>
-              <p className="text-sm text-zinc-600">Lashibi, Ghana</p>
-              <p className="text-sm text-yellow-500">4.4</p>
+              <p className="text-lg text-zinc-600">Lashibi, Ghana</p>
+              <p className="text-lg text-yellow-500">4.4</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -71,8 +76,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Abigail Sika</h3>
-              <p className="text-sm text-zinc-600">Madina, Ghana</p>
-              <p className="text-sm text-yellow-500">4.2</p>
+              <p className="text-lg text-zinc-600">Madina, Ghana</p>
+              <p className="text-lg text-yellow-500">4.2</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -85,8 +91,9 @@ const DealerCard = () => {
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">Abigail Oppong</h3>
-              <p className="text-sm text-zinc-600">Kasoa, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Kasoa, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -98,8 +105,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Telvin Asamoah</h3>
-              <p className="text-sm text-zinc-600">Ashaiman, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Ashaiman, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
         </div>
@@ -117,8 +125,9 @@ const DealerCard = () => {
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">Tracey Boateng</h3>
-              <p className="text-sm text-zinc-600">Teshie, Ghana</p>
-              <p className="text-sm text-yellow-500">4.4</p>
+              <p className="text-lg text-zinc-600">Teshie, Ghana</p>
+              <p className="text-lg text-yellow-500">4.4</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -130,8 +139,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Comfort Osei</h3>
-              <p className="text-sm text-zinc-600">East Legon, Ghana</p>
-              <p className="text-sm text-yellow-500">4.2</p>
+              <p className="text-lg text-zinc-600">East Legon, Ghana</p>
+              <p className="text-lg text-yellow-500">4.2</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -144,8 +154,9 @@ const DealerCard = () => {
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">Priscilla Opoku</h3>
-              <p className="text-sm text-zinc-600">Ridge, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Ridge, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -157,8 +168,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Elvin Boateng</h3>
-              <p className="text-sm text-zinc-600">Ashaiman Lebanon, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Ashaiman Lebanon, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
         </div>
@@ -176,8 +188,9 @@ const DealerCard = () => {
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">Evarest Siaw</h3>
-              <p className="text-sm text-zinc-600">Nungua, Ghana</p>
-              <p className="text-sm text-yellow-500">4.4</p>
+              <p className="text-lg text-zinc-600">Nungua, Ghana</p>
+              <p className="text-lg text-yellow-500">4.4</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -189,8 +202,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Isaiah Asamoah</h3>
-              <p className="text-sm text-zinc-600">Cantonment, Ghana</p>
-              <p className="text-sm text-yellow-500">4.2</p>
+              <p className="text-lg text-zinc-600">Cantonment, Ghana</p>
+              <p className="text-lg text-yellow-500">4.2</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -203,8 +217,9 @@ const DealerCard = () => {
 
             <div className="p-4">
               <h3 className="text-lg font-semibold">Alfred Nartey</h3>
-              <p className="text-sm text-zinc-600">Makola, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Makola, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
 
@@ -216,8 +231,9 @@ const DealerCard = () => {
             />
             <div className="p-4">
               <h3 className="text-lg font-semibold">Theophilus Abdullah</h3>
-              <p className="text-sm text-zinc-600">Madina, Ghana</p>
-              <p className="text-sm text-yellow-500">4.3</p>
+              <p className="text-lg text-zinc-600">Madina, Ghana</p>
+              <p className="text-lg text-yellow-500">4.3</p>
+              <button className="w-24 mt-2 text-black" onClick={() => navigate("/dealerdetails")}>Contact</button>
             </div>
           </div>
         </div>

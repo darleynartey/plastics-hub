@@ -21,7 +21,7 @@ const Support = () => {
                       <p className='text-gray-600 text-xl h-36'>Offering expert advice on waste management strategies, and disposal options tailored to the client's specific needs and goals.</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-teal-600'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-teal-600 cursor-pointer'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
               </div>
 
@@ -32,7 +32,7 @@ const Support = () => {
                       <p className='text-gray-600 text-xl h-36'> Processing plastic waste through recycling facilities to convert it into reusable materials, thereby reducing the need for virgin plastic production.</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-teal-600'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-teal-600 cursor-pointer'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
               </div>
 
@@ -43,7 +43,7 @@ const Support = () => {
                       <p className='text-gray-600 text-xl h-36'>Providing training programs and educational resources to help clients understand the importance of proper waste management practices.</p>
                   </div>
                   <div className='bg-slate-100 pl-8 py-4'>
-                      <p className='flex items-center text-teal-600'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
+                      <p className='flex items-center text-teal-600 cursor-pointer'>Get In Touch <ArrowSmRightIcon className='w-5 ml-2' /></p>
                   </div>
               </div>
 
