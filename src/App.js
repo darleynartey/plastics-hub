@@ -5,6 +5,7 @@ import DealersDetails from "./pages/dealerspage/DealersDetails";
 import DealerCard from "./pages/dealerspage/DealerCard";
 import SignUp from "./pages/loginpage/SignUp";
 import Register from "./pages/loginpage/Register";
+import AdminPanel from "./pages/dealerdashboard/parts/AdminPanel";
 
 const router = createBrowserRouter ([
  {path: "/", element: <LandingPage/>},
@@ -13,6 +14,7 @@ const router = createBrowserRouter ([
  {path: "/dealercard", element: <DealerCard/>},
  {path: "/signup", element: <SignUp/>},
  {path: "/register", element: <Register/>},
+ {path: "/adminpanel", element: <AdminPanel/>},
 ])
 
 const App = () => {
